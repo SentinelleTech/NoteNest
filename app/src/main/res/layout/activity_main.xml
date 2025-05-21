@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/etNoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/note_title"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textCapSentences"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/text_hint_color" />
+
+
+    <EditText
+        android:id="@+id/etNoteContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/note_content"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:gravity="top"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/text_hint_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add_note"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_button_primary"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:elevation="4dp"/>
+
+        <Button
+            android:id="@+id/buttonView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/view_note"
+            android:background="@drawable/rounded_button_primary"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:elevation="4dp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etNoteId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="@string/note_id"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="number"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/text_hint_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/update_note"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_button_primary"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:elevation="4dp"/>
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/delete_note"
+            android:background="@drawable/rounded_button_primary"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:elevation="4dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvNotes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#DDDDDD"
+        android:dividerHeight="1dp"
+        android:background="@drawable/rounded_listview_background"
+        android:padding="8dp"/>
+
+
+</LinearLayout>
