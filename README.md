@@ -47,7 +47,7 @@ An Android device or emulator for running the app.
 **Installation**
 
 Clone the repository: 
-git clone https://www.google.com/search?q=https://github.com/SentinelleTech/NoteNest/tree/master
+git clone https://github.com/SentinelleTech/NoteNest
 
 **Open in Android Studio:**
 
